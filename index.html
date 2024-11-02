@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dist/sweetalert2.css">
+</head>
+<body>
+    <h1 class="h1-login">Login Page V2</h1>
+    <button id="openModal" class="open-modal" onclick="openModal()">Open Login</button>
+    <div id="LoginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Login.</h2>
+            <form id="LoginForm">
+                <div class="input-group">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" placeholder="Username" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                </div>
+                <a href="#" class="a-forget" onclick="showPrompt()">Forget password?</a><br>
+                <button type="submit">Login</button>
+            </form>
+            <p class="message">Don't have an account yet? <a href="#" class="sign-up">Sign up here</a></p>
+        </div>
+    </div>
+
+    <script src="dist/sweetalert2.all.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
